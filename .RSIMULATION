@@ -1,0 +1,62 @@
+instal..packages("data.table")
+library(data.table)
+iris_dt<-as.data.tablr(iris)
+iris_dt <- as.data.table(iris)
+iris_dt[species == "virginica", round(mean,Sepal.Length))]
+iris_dt[Species == "virginica",round(mean(Sepal.Length)) ]
+apply(iris[,1:4,2,mean)
+apply(iris[,1:4],2,mean)
+with(mtcars,tapply(mpg,cyl,mean))
+apply(mtcars,2,mean)
+split(mtcars,mtcar$cyl)
+split(mtcars,mtcars$cyl)
+sapply(mtcars,cyl,mean)
+with(mtcars,tapply(mpg,cyl,mean))
+tapply(mtcars$mpg,mtcars$cyl,mean)
+mean(mtcars$mpg,mtcars$cyl)
+lapply(mtcars,mean)
+sapply(split(mtcars$mpg,mtcars$cyl,mean)
+0
+tapply(mtcars$cyl,mtcars$mpg,mean)
+mtcars_dt<-as.data.table(mtcars)
+mtcars_dt<-mtcars_dt[, .(mean_cols = mean(hp)), by = cyl]
+round(abs(mtcars_dt[cyl == 4, mean_cols] - mtcars_dt[cyl == 8, mean_cols]))
+debud(Is)
+debug(Is)
+set.seed(1)
+rpois(5,2)
+set.seed(10)
+x <- rep(0:1,each=5)
+e <- rnorm(10,0,20)
+y <- .5+2*x+e
+0
+library(datasets)
+Rprof()
+fit <- lm(y ~ x1 + x2)
+best("SC","heart attack")
+q()
+#Simular disribuciones paretos
+simpar <- function(a,b,N){
+u <- runif(N)
+pareto <- b/(u^(1/a))
+return(pareto)
+}
+x <- simpar(1,1,1000000)
+hist(x,freq=FALSE,main="Pareto(1,1)")
+y <- simpar(5,7,1000000)
+hist(y, freq=FALSE, main="Pareto(5,7)")
+#Simular distribuciones Bernoulli
+simber <- function(p,N){
+x <- rep(NA,N)
+for(i in 1:N){
+u <- runif(1)
+if(u<p){x[i]<-1}
+else{x[i]<-0}
+}
+return (x)
+}
+z <- simber(.2,1000)
+hist(z, freq=FALSE, main="Bernoulli(0.2)")
+git remote -v
+$ git remote -v
+apropos("github")
